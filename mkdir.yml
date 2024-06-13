@@ -1,8 +1,8 @@
 ---
 - name: Create Ansible folder
   hosts: all
-  become: true
+  become: false
 
   tasks:
     - name: List directory contents
-      command: mkdir /hello
+      command: ls
